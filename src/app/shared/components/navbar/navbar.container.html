@@ -1,0 +1,14 @@
+<nav class="mat-elevation-z6">
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <h1 class="home-link" [routerLink]="['/','home']">Starwars battles</h1>
+      <button mat-button [matMenuTriggerFor]="menu">Choose resource</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item [routerLink]="['/','people']">People</button>
+        <button mat-menu-item [routerLink]="['/','starships']">
+          Starships
+        </button>
+      </mat-menu>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</nav>

@@ -1,0 +1,12 @@
+<div class="board">
+  <div class="left-player">
+    <ng-container [ngTemplateOutlet]="left"></ng-container>
+  </div>
+  <h1>vs.</h1>
+  <div class="right-player">
+    <ng-container [ngTemplateOutlet]="right"></ng-container>
+  </div>
+</div>
+<div class="actions">
+  <button mat-raised-button [disabled]="disabled" (click)="drawCards.emit()">Draw cards</button>
+</div>

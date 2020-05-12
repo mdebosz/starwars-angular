@@ -1,0 +1,13 @@
+.board {
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}

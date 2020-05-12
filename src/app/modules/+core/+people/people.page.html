@@ -1,0 +1,11 @@
+<app-score-table [leftWins]="leftPlayerWonMatches$ | async" [rightWins]="rightPlayerWonMatches$ | async">
+</app-score-table>
+<app-match-layout [left]="leftTemplate" [right]="rightTemplate" [disabled]="disabled$ | async"
+  (drawCards)="startGame()">
+  <ng-template #leftTemplate>
+    <app-person-card [person]="leftCard$ | async"></app-person-card>
+  </ng-template>
+  <ng-template #rightTemplate>
+    <app-person-card [person]="rightCard$ | async"></app-person-card>
+  </ng-template>
+</app-match-layout>
