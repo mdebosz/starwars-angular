@@ -1,9 +1,11 @@
-import { ApiConfiguration } from './api.config';
 import { HttpClient } from '@angular/common/http';
+
+import { ApiConfiguration } from './api.config';
 
 export class BaseService {
   constructor(protected config: ApiConfiguration, protected http: HttpClient) {}
 
+  // tslint:disable-next-line: variable-name
   private _rootUrl = '';
 
   /**
